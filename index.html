@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student-Teacher Booking Appointment System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+      <div class="section">
+        <div class="title">
+          <h1>Student-Teacher Booking Appointment System</h1>
+        </div>
+        <div class="form-box">
+          <div class="button-box">
+            <div id="btn"></div>
+            <button id="adminlogin_btn" class="toggle-btn"><a href="admin.html">Admin Login</a></button>
+            <button id="teacherlogin_btn" class="toggle-btn"><a href="teacher.html">Teacher Login</a></button>
+            <button id="studentlogin_btn" class="toggle-btn"><a href="student.html">Student Login</a></button>
+
+          </div>
+
+          <form id="login" class="input-group" action="admin.html">
+            <input type="text" id="username" class="input-field" placeholder="admin Id" required>   
+            <input type="password" id="password" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>Remember Passsword</span>
+            <button type="submit" class="submit-btn">Log In</button>
+          </form>
+         
+        </div>
+      </div>
+
+    </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js"></script>  
+	<script src="script.js"></script>
+  
+  </body>
+</html>

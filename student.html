@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="student.css">
+    <title>Student Interface</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Interface</h2>
+
+        <!-- Navigation -->
+        <div id="nav">
+            <button onclick="showLoginForm()">Login</button>
+            <button onclick="showRegisterForm()">Register</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+        <!-- Register Form -->
+        <div id="registerForm">
+            <h3>Register</h3>
+            <form id="register">
+                <!-- ... (fields for registration) -->
+                <button type="button" onclick="register()">Register</button>
+            </form>
+        </div>
+
+        <!-- Login Form -->
+        <div id="loginForm">
+            <h3>Login</h3>
+            <form id="login">
+                <!-- ... (fields for login) -->
+                <button type="button" onclick="login()">Login</button>
+            </form>
+        </div>
+
+        <!-- Search Teacher -->
+        <div id="searchTeacher">
+            <h3>Search Teacher</h3>
+            <input type="text" id="teacherSearchInput" placeholder="Enter teacher name">
+            <button type="button" onclick="searchTeacher()">Search</button>
+        </div>
+
+        <!-- Book Appointment -->
+        <div id="bookAppointment">
+            <h3>Book Appointment</h3>
+            <!-- ... (fields for appointment) -->
+            <button type="button" onclick="bookAppointment()">Book</button>
+        </div>
+
+        <!-- Send Message -->
+        <div id="sendMessage">
+            <h3>Send Message</h3>
+            <textarea id="messageInput" placeholder="Type your message"></textarea>
+            <button type="button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="student.js"></script>
+</body>
+</html>
